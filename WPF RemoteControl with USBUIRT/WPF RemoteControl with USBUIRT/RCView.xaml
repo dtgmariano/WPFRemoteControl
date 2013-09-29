@@ -1,0 +1,61 @@
+﻿<Window x:Class="WPF_RemoteControl_with_USBUIRT.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="324" Width="204">
+    <Grid>
+        <Button x:Name ="btChannelUp" Content="Ch+" HorizontalAlignment="Left" Margin="74,115,0,0" VerticalAlignment="Top" Width="50" Height="50">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                    <GradientStop Color="#FFF3F3F3" Offset="0"/>
+                    <GradientStop Color="#FFEBEBEB" Offset="0.5"/>
+                    <GradientStop Color="#FFDDDDDD" Offset="0.5"/>
+                    <GradientStop Color="#FF4336C7" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button x:Name ="btVolumeUp" Content="Vol+" HorizontalAlignment="Left" Margin="129,170,0,0" VerticalAlignment="Top" Width="50" Height="50">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                    <GradientStop Color="#FFF3F3F3" Offset="0"/>
+                    <GradientStop Color="#FFEBEBEB" Offset="0.5"/>
+                    <GradientStop Color="#FFDDDDDD" Offset="0.5"/>
+                    <GradientStop Color="#FF178731" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button x:Name ="btVolumeDown" Content="Vol-" HorizontalAlignment="Left" Margin="19,170,0,0" VerticalAlignment="Top" Width="50" Height="50">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                    <GradientStop Color="#FFF3F3F3" Offset="0"/>
+                    <GradientStop Color="#FFEBEBEB" Offset="0.5"/>
+                    <GradientStop Color="#FFDDDDDD" Offset="0.5"/>
+                    <GradientStop Color="#FF178731" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button x:Name ="btChannelDown" Content="Ch-" HorizontalAlignment="Left" Margin="74,225,0,0" VerticalAlignment="Top" Width="50" Height="50">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                    <GradientStop Color="#FFF3F3F3" Offset="0"/>
+                    <GradientStop Color="#FFEBEBEB" Offset="0.5"/>
+                    <GradientStop Color="#FFDDDDDD" Offset="0.5"/>
+                    <GradientStop Color="#FF4336C7" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button x:Name ="btPower" Content="On/Off" HorizontalAlignment="Left" Margin="74,170,0,0" VerticalAlignment="Top" Width="50" Height="50">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                    <GradientStop Color="#FFF3F3F3" Offset="0"/>
+                    <GradientStop Color="#FFEBEBEB" Offset="0.5"/>
+                    <GradientStop Color="#FFDDDDDD" Offset="0.5"/>
+                    <GradientStop Color="#FFF00C0C" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Label x:Name="lbPower" Content="{Binding Energy}" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lbChannel" Content="{Binding Channel}" HorizontalAlignment="Left" Margin="10,34,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.132,1.615"/>
+        <Label x:Name="lbVolume" Content="{Binding Volume}" HorizontalAlignment="Left" Margin="10,60,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>
